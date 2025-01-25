@@ -5,7 +5,7 @@ function checkAnswer() {
     const result = document.getElementById('result');
     
     if (userAnswer === hiddenAnswer || userAnswer === hiddenAnswer.replace(" ", "")) {
-        result.innerHTML = '<p class="success"> 2-level-elddiR/oi.buhtig.yxorp-laer//:sptth </p>';
+        result.innerHTML = '<p class="success"> /dne-daeD/oi.buhtig.yxorp-laer//:sptth </p>';
     } else {
         result.innerHTML = '<p class="error">Nope, wrong answer.</p>';
     }
