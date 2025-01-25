@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag number {insert number here}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f3;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #4a90e2;
+        }
+
+        .riddle {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border: 2px solid #4a90e2;
+            border-radius: 10px;
+            background-color: #ffffff;
+            text-align: left;
+        }
+
+        .answer {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .hint {
+            margin-top: 15px;
+            font-style: italic;
+            color: #777;
+        }
+
+        .success {
+            margin-top: 20px;
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .error {
+            margin-top: 20px;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Riddle Time</h1>
+
+    <div class="riddle">
+        <p><strong>Riddle:</strong> 
+            Είμαι ένα εικονικό δοχείο, κρατώντας κλειδιά και τιμές. Οι λειτουργίες μου είναι συνεχείς, ωστόσο οι συγκρούσεις μπορεί να προκαλέσουν καθυστερήσεις. Τι είμαι;
+        </p>
+
+        <div class="answer">
+            <input type="text" id="userAnswer" placeholder="Enter your answer here (english)...">
+            <button onclick="checkAnswer()">Submit</button>
+        </div>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
